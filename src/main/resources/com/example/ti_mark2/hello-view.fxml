@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="301.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ti_mark2.HelloController">
+    <children>
+        <Button fx:id="encryptButton" layoutX="21.0" layoutY="139.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="148.0" text="Шифровать" />
+        <ComboBox fx:id="algorithmComboBox" layoutX="21.0" layoutY="32.0" prefHeight="25.0" prefWidth="229.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Шифр Плейфейра (английский)" />
+                    <String fx:value="Алгоритм Виженера (русский)" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+        <Label layoutX="21.0" layoutY="14.0" prefHeight="17.0" prefWidth="148.0" text="Выберите шифр:" />
+        <TextArea fx:id="outputArea" layoutX="21.0" layoutY="177.0" prefHeight="110.0" prefWidth="392.0" />
+        <TextField fx:id="keyField" layoutX="21.0" layoutY="109.0" prefHeight="25.0" prefWidth="148.0" />
+        <Label layoutX="21.0" layoutY="92.0" prefHeight="17.0" prefWidth="148.0" text="Ключ:" />
+        <TextField fx:id="inputField" layoutX="189.0" layoutY="109.0" prefHeight="25.0" prefWidth="220.0" />
+        <Button fx:id="decryptButton" layoutX="261.0" layoutY="138.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="148.0" text="Дешировать" />
+        <Label layoutX="192.0" layoutY="92.0" prefHeight="17.0" prefWidth="117.0" text="Исходный текст:" />
+        <Button fx:id="clearButton" layoutX="174.0" layoutY="138.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" text="Очистить" />
+        <Button fx:id="writeFileButton" layoutX="306.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="101.0" text="Запись в файл:" />
+        <Button fx:id="readFileButton" layoutX="305.0" layoutY="45.0" mnemonicParsing="false" text="Чтение с файла:" />
+    </children>
+</Pane>
